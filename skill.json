@@ -1,0 +1,38 @@
+{
+  "name": "genpark-multi-model-unified-prompt-workspace-synchronizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-model unified prompt workspace synchronizer coordinating multi-LLM outputs, artifact sidebars, and plugin caches.",
+  "author": "genpark",
+  "category": "chat-workspace",
+  "tags": [
+    "product-hunt",
+    "typingmind",
+    "chathub",
+    "multi-model-chat",
+    "prompt-workspace"
+  ],
+  "inputs": {
+    "user_prompt": {
+      "type": "string"
+    },
+    "active_models": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "workspace_session_id": {
+      "type": "string"
+    },
+    "models_queried_count": {
+      "type": "integer"
+    },
+    "cross_model_consensus_rating_pct": {
+      "type": "number"
+    },
+    "workspace_snapshot_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
